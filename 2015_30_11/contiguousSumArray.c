@@ -26,7 +26,7 @@ void maxContiguousArraySum(int *arr, int size){
                 curSum = curSum + arr[i];
                 if(z == -1)
                         z = i;
-                if (curSum < 0){
+                if (curSum <= 0){
                         curSum = 0;
                         z = -1;
                 }
