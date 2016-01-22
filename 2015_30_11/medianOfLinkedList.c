@@ -40,7 +40,7 @@ int medianOfSortedLinkedList(struct node *head){
 	if (head != NULL){
 		struct node *ptr = head;
 		struct node *cur = head;
-        	while (cur->next != NULL){
+        	while (cur->next != NULL && cur != NULL){
             		cur = cur->next->next;
 	            	ptr = ptr->next;
         	}
